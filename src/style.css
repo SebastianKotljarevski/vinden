@@ -1,0 +1,407 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3!important;
+}
+
+.header, h1 {
+    margin: 0;
+}
+
+.header {
+    padding-top: 1.5vh;
+    padding-left: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    text-align: center;
+    width: 70%;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.orderContent h1 {
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.orderContent p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.bookingBox {
+    height: 25em;
+    width: 23em;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+.bookingBox p {
+    width: 18rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookingBox button {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.items {
+    background-color: white;
+    height: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+    border: 2px solid rgba(0,0,0,.1);
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 1vh;
+    padding-bottom: 5vh;
+}
+
+.items h2 {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+}
+.orderContent {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    padding-top: 4vh;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-bottom: 15vh;
+}
+
+.orderContent h1 {
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.textPlacement {
+    padding-bottom: 5vh;
+}
+
+#itemPrice {
+    color: gray;
+}
+
+#SelectButton {
+    float: right;
+    margin-top: -60px;
+}
+
+.number {
+    width: 25px;
+    text-align: center;
+}
+
+.cardDiv {
+    width: 100%;
+}
+
+.cardButton {
+    float: right;
+    margin-top: -40px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.cardTextWidth {
+    width: 55%;
+}
+
+#red {
+    box-shadow: 0 0 0 0px,0 2px 0 0 #8C2C3A,0 0px 0px 0;
+}    
+
+.snackbar {
+    visibility: hidden;
+    width: 100%;
+    background-color: #8C2C3A;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    bottom: -1px;
+    font-size: 1rem;
+    font-size: 18px;
+}
+
+.checkoutButton {
+    float: right;
+    border: 1px solid white!important;
+    margin-right: 2em!important;
+    position: relative;
+    top: -8px;
+}
+
+.checkoutButton a {
+    color: white;
+}
+
+.checkoutButton a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+.snackbar.hide {
+    visibility: hidden;
+    -webkit-animation: fadeout 0.5s;
+    animation: fadeout 0.5;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: -1px; opacity: 1;}
+    }
+
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: -1px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.checkoutContent input {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 7px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.checkoutContent label {
+    font-size: 20px;
+    margin-left: 3vw;
+}
+
+.checkoutContent input:focus {
+    border: 2px solid #8C2C3A;
+    padding: 9px;
+}
+
+.checkoutContent h1{
+    margin-left: 1.5vw;
+    padding-top: 1vh;
+}
+
+#checkoutTitle {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 500;
+    padding-bottom: 45px;
+}
+
+.checkoutContent button {
+    display: block;
+    margin-left: 3vw;
+}
+
+.right {
+    float: right;
+}
+
+.leftDiv {
+    float: left;
+    width: 55%;
+    margin-left: 2em;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+.rightDiv {
+    float: right;
+    width: 35%;
+    margin-right: 2em;
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+.rightDiv h2 {
+    margin-left: 1.5vw;
+}
+
+.checkoutText {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.react-datepicker-wrapper {
+    width: 54.5vw;
+}
+
+.snackbarText {
+    position: relative;
+    top: 17px;
+}
+
+/*Iphone 8 plus*/
+@media screen and (max-width: 416px) {
+    .content {
+        width: 80%;
+        padding-top: 2vh;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .items {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content.cardDiv {
+        padding: 0!important;
+    }
+
+    .cardButton {
+        padding-left: 53vw;
+        position: absolute;
+    }
+}
+
+.leftDiv button {
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 1366px) {
+    .cardTextWidth {
+        width: 60%;
+    }
+}   
+
+@media screen and (max-width: 783px) {
+    .cardTextWidth {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .cardTextWidth {
+        width: 85%;
+    }
+
+    .leftDiv {
+        width: 86%;
+    }
+
+    .rightDiv {
+        width: 86%;
+        margin-top: 5vh;
+    }
+
+    #checkoutTitle {
+        font-size: 55px;
+    }
+
+    .react-datepicker-wrapper {
+        width: 85.5vw;
+    }
+
+    .checkoutButton {
+        float: none;
+        margin-bottom: 40px!important;
+        position: relative;
+        top: 30px;
+        margin-right: 0!important;
+    }
+
+    .orderContent {
+        padding-bottom: 20vh;
+    }
+}
+
+/*Iphone 8*/
+@media screen and (max-width: 375px) {
+    .content {
+        width: 87%;
+    }
+
+    .orderContent {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .cardButton {
+        padding-left: 62vw;
+        position: absolute;
+    }
+}
+
+/*Iphone SE*/
+@media screen and (max-width: 320px) {
+    .bookingBox {
+        width: 20em;
+    }
+
+    .cardButton {
+        padding-left: 59vw;
+    }
+
+    .rightDiv {
+        margin-right: 1.2em;
+    }
+
+    .cardTextWidth {
+        width: 78%;
+    }
+
+    .orderContent {
+        padding-bottom: 30vh;
+    }
+}
